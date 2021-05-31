@@ -1,0 +1,234 @@
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif !important;
+    /*font-family: 'Open Sans Condensed', sans-serif;*/
+}
+
+h1,h2,h3,h6{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+a{
+    text-decoration:none;
+    color: white !important;
+}
+
+a:link{text-decoration:none;}
+a:hover{
+    text-decoration:none;
+}
+
+a:link{
+    background:transparent !important;
+}
+
+a:visited{
+    background:transparent !important;
+}
+
+a:active{
+    background:transparent !important;
+}
+.header-padding{
+    padding-top: 100px;
+}
+
+
+.starter-template {
+    padding: 3rem 1.5rem;
+    text-align: center !important;
+}
+
+  
+.list-group-item {
+    border: 0.5px solid #ccc !important;
+    text-decoration:none;
+    color:black !important;
+}
+
+.list-group-item:active {
+    border: 0.5px solid #ccc !important;
+    color: black !important;
+}
+/*DEBUT HEADER*/
+
+
+.image-logo{
+    width: 80px;
+    height: 80px;     
+}
+.bouton-rosepoudre:hover{
+    background-color:#2C3E50 !important;
+    color: white !important;
+}
+
+
+
+/*FIN HEADER*/
+/*PAGE INDEX*/
+.c-background{
+    width: 300px;
+    background:rgba(217, 158, 158, 0.5);
+    border-radius:20px;
+    color:black;
+}
+.button-v{
+    width: 80px;
+    display: inline-block;
+    position: relative;
+    background: none;
+    border: none;
+    color: black !important;
+    font-size: 18px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    cursor: pointer;
+    margin: 20px 30px;
+}
+
+.button-v span{
+    display: block;
+    padding: 25px;
+}
+
+.button-v::before, .button-v::after{
+    content:"";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: black;
+}
+
+span::before, span::after{
+    content:"";
+    width:2px;
+    height:0;
+    position: absolute;
+    transition: all 0.2s linear;
+    background: black;
+}
+
+.button-v:hover::before, .button-v:hover::after{
+    width: 50%;
+}
+
+.button-v:hover span::before, .button-v:hover span::after{
+    height: 100%;
+}
+
+.btn-3::after{
+    left: 0;
+    bottom: 0;
+    transition-delay: 0.6s;
+}
+
+.btn-3 span::after{
+    transition-delay: 0.4s;
+    right: 0;
+    bottom: 0;
+}
+
+.btn-3::before{
+    right: 0;
+    top: 0;
+    transition-delay: 0.2s;
+}
+
+.btn-3 span::before{
+    transition-delay: 0s;
+    left: 0;
+    top: 0;
+}
+
+.btn-3:hover::after{
+    transition-delay: 0s;
+}
+
+.btn-3:hover span::after{
+    transition-delay: 0.2s;
+}
+
+.btn-3:hover::before{
+transition-delay: 0.4s;
+}
+
+.btn-3:hover span::before{
+    transition-delay: 0.6s;
+}
+.lead{
+    font-family: 'Open Sans Condensed', sans-serif;
+}  
+.carousel-caption{
+    display:none;
+}
+/*FIN PAGE INDEX*/
+/*DEBUT PAGE CONNECTION*/
+.formulaire-min-height{
+    min-height: 90vh;
+}
+
+.connection-padding{
+    padding-top: 50px;
+}
+
+
+/*FIN CONNECTION*/
+
+/*DEBUT FOOTER*/
+
+
+.footer{
+    color: #FFF !important;
+    min-height:100px;
+    background-color:#2C3E50 !important;
+
+}
+
+
+.footer div{
+    padding-top:15px;
+}
+
+.btn-footer:hover{
+    color:black !important;
+}
+
+#cookieChoiceInfo {
+    font-size:18px;
+    font-family: 'Open Sans Condensed', sans-serif;
+    margin-top: 10px;
+}
+
+
+/*END FOOTER*/
+
+
+
+@media screen and (min-width:789px) {
+
+    .carousel-item {
+        height: 80vh;
+    }
+    .carousel-caption{
+        display:block;
+    }
+    .bouton-rosepoudre{
+        color:pink !important;
+        border:1px solid;
+        border-radius:8px;
+        transition:.4s;
+        margin-right:4px;
+    }
+	
+}
+
+@media screen and (min-width: 1187px){
+	
+	
+}
