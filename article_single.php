@@ -2,6 +2,33 @@
 include('header.php');
 require_once('database.php'); 
 
+/* requête de récupération de l'article
+$maRequete = $db->prepare(
+    'SELECT *
+    FROM post
+    WHERE id = :boiteId
+    ');
+$maRequete->execute([
+    "boiteId" => $_GET["id"]
+]);
+$post = $maRequete->fetch();
+
+
+
+
+
+<?php 
+$maRequete = $db->prepare('SELECT * FROM post  WHERE id = :boiteId'); 
+$maRequete->execute([
+"boiteId" => $rendu['id']
+]);
+$rendu = $maRequete->fetch();
+?>
+
+*/
+
+
+
 // requête de récupération de l'article
 $maRequete = $db->prepare(
     'SELECT *
@@ -12,6 +39,10 @@ $maRequete->execute([
     "boiteId" => $_GET["idDePost"]
 ]);
 $rendu = $maRequete->fetch();
+
+
+
+
 
 
 // requête de récupération des commentaires de l'article

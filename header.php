@@ -22,22 +22,22 @@
 <body>
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="background-color: #2C3E50;">
-    <a class="navbar-brand" href="<?php echo URL; ?>index.php"></a>
+    <a class="navbar-brand" href="index.php"></a>
     <h3><a href="index.php">My Blog</a></h3>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <div class="collapse navbar-collapse" id="navbarCollapse">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="<?php echo URL; ?>index.php">Accueil <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.php">Accueil <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo URL; ?>article_all.php">News</a>
+          <a class="nav-link" href="article_all.php">News</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="<?php echo URL; ?>contact.php">Contactez-moi</a>
+          <a class="nav-link" href="contact.php">Contactez-moi</a>
         </li>
         
         <?php if(isset($_SESSION['user'])): ?>

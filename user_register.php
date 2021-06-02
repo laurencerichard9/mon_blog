@@ -3,7 +3,7 @@
 ?>
 <div class="text-center formulaire-min-height connection-padding">   
     <form action="user_register_handling.php" method="POST" enctype="multipart/form-data" class="" >
-        <img class="mb-4" src="logo/robot&me.png" alt="" width="72" height="72">
+        <img class="rounded-circle" src="images/robot&me.jpg" alt="image de moi" width="70" height="70">
         <hr>
         <h1 class="h3 mb-3 font-weight-normal">Inscription</h1>        
 
@@ -43,10 +43,7 @@
                 <input type="password" id="password_verify" name="password_verify"  placeholder="ressaisir votre mot de passe" class="form-control" maxlength="255" required autofocus >
             </div>
         </div>
-        
-        
-
-        <button type="submit" class="btn btn-secondary btn-block col-sm-3 mx-auto">S'inscrire</button>
+        <button type="submit" class="btn btn-secondary btn-block col-sm-3 mt-2 mb-4 mx-auto">S'inscrire</button>
     </form>
 </div>
 
