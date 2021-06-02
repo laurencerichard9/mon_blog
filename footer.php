@@ -17,7 +17,7 @@
             </p>
         </div> 
             <div>
-            <button type="bouton-rosepoudre" class="btn text-white bouton-rosepoudre p-1 ml-3">Administration</button>
+            <button type="bouton-rosepoudre" class="btn text-white bouton-rosepoudre p-1 ml-3"><a href="admin/index.php">Administration</a></button>
             </div>
         </div>
 
