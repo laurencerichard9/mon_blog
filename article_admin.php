@@ -38,7 +38,7 @@ $post = $maRequete->fetchAll();
 			<td><?php echo $row['creation_date']; ?></td>
 			<td><?php echo $row['last_update_date']; ?></td>
             <td><?php echo $row['publication_date']; ?></td>
-            <td><?php echo $row['enum_statuts_post']; ?></td>
+            <td><?php echo $row['enum_status_post']; ?></td>
 			<td>
 				<a href="article_edit.php?idDepost=<?php echo $row['id']; ?>">Modifier</a>
 			</td>

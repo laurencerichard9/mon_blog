@@ -11,16 +11,11 @@ $user = $maRequete->fetch();
 
 ?>
 
-<div class="container">    
-    <div class="card m-auto" style="width: 18rem;">
-    <?php if($user['avatar'] ): ?>
-        <img src="../<?php echo $user['avatar'] ?>" class="card-img-top" alt="avatar de <?php echo $user['name']; ?>">
-    <?php endif; ?>
+    <div class="container">    
         <div class="card-body">
-            <h5 class="card-title text-center"><?php echo $user['name']; ?></h5>
+            <h5 class="card-title text-center"><?php echo $user['nick_name']; ?></h5>
             <p class="card-text">
-                <div>Mail: <?php echo $user['email'] ?></div>
-                <div>Numéro: <?php echo $user['phone'] ?></div>
+                <div>Mail: <?php echo $user['email_address'] ?></div>
             </p>
         </div>
     </div>

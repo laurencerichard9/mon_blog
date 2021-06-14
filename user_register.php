@@ -43,7 +43,11 @@
                 <input type="password" id="password_verify" name="password_verify"  placeholder="ressaisir votre mot de passe" class="form-control" maxlength="255" required autofocus >
             </div>
         </div>
-        <button type="submit" class="btn btn-secondary btn-block col-sm-3 mt-2 mb-4 mx-auto">S'inscrire</button>
+        <br>
+        <div class="col-12">
+                <button class="btn btn-secondary text-white" type="submit" name="inscription" id="inscription" value="inscription">S'inscrire</button>
+        </div>
+        <br>
     </form>
 </div>
 

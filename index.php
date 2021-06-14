@@ -41,7 +41,23 @@ $post = $maRequete->fetch();
 				</div>
 			</div>
 </div>
+<div class="container-fluid py-4">
 
+	<div class="col-md-12 col-lg-12 mx-auto py-4 text_socialnetworks">
+    	<span class="socialnetworks"><a href="https://github.com/laurencerichard9" target="_blank"><i class="fab fa-github-square"></i></a>
+    	</span>	
+    	<span class="socialnetworks"><a href="https://www.linkedin.com/in/laurence-richard-09/" target="_blank"><i class="fab fa-linkedin"></i></a> 
+    	</span>
+    	<span class="socialnetworks"><a href="https://twitter.com/lsrichard1" target="_blank"><i class="fab fa-twitter-square"></i></a>
+    	</span>
+		<span class="link-pdf pt-2">
+    		<a href="images/cv_developpeur_integrateur_web_et_infographiste_lr.pdf" target="_blank">CV</a>
+		</span>
+    	<p class="link-mail pt-2">
+			<a href="mailto:lsrichard09@gmail.com"><i class="fa fas fa-envelope-square icon-margin-right"></i>&nbsp;lsrichard09@gmail.com</a>
+    	</p>
+	</div> 
+</div>
 
 <?php require_once("footer.php"); ?>
 

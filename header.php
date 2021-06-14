@@ -23,7 +23,7 @@
 
 <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" style="background-color: #2C3E50;">
     <a class="navbar-brand" href="index.php"></a>
-    <h3><a href="index.php">My Blog</a></h3>
+    <h1><a href="index.php">My Blog</a></h1>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -43,23 +43,23 @@
         <?php if(isset($_SESSION['user'])): ?>
                 <?php if($_SESSION['user']['role'] === 'admin'): ?>
                     <li  class="nav-item">
-                        <a class="nav-link bouton-rosepoudre" href="admin/index.php">Administration</a>
+                        <a class="nav-link bouton-orange" href="/admin/index.php">Administration</a>
                     </li>
                 <?php endif; ?>
                 <?php if($_SESSION['user']['role'] === 'visitor'): ?>
                     <li  class="nav-item">
-                        <a class="nav-link bouton-rosepoudre" href="article_all.php" >Espace visitor</a>
+                        <a class="nav-link bouton-orange" href="article_all.php" >Espace visitor</a>
                     </li>
                 <?php endif; ?>
                     <li  class="nav-item">
-                            <a class="nav-link bouton-rosepoudre" href="user_logout.php" class="site-menu-item">Déconnexion</a>
+                            <a class="nav-link bouton-orange" href="user_logout.php" class="site-menu-item">Déconnexion</a>
                     </li>
                 <?php else: ?>
                     <li  class="nav-item">
-                        <a class="nav-link bouton-rosepoudre" href="user_login.php">Connection</a>
+                        <a class="nav-link bouton-orange" href="user_login.php">Connection</a>
                     </li>
                     <li  class="nav-item">
-                        <a class="nav-link bouton-rosepoudre" href="user_register.php">Inscription</a>
+                        <a class="nav-link bouton-orange" href="user_register.php">Inscription</a>
                     </li>
         <?php endif; ?>
         <?php if(isset($_SESSION['user'])): ?>

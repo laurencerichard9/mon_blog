@@ -7,7 +7,7 @@
         <h1 class="h3 mb-4 py-4 font-weight-normal">Connection</h1>
         <div class="form-group">
             <label for="nick_name" class="col-sm-3 mt-4 control-label">Pseudo</label>
-            <div class="col-sm-4 mt-4 mx-auto">
+            <div class="col-sm-4 mx-auto">
                 <input type="text" id="nick_name" name="nick_name" placeholder="Entrez votre pseudo" class="form-control" maxlength="50" required autofocus >
             </div>
         <br>
@@ -21,8 +21,11 @@
         </div>
         <br>
         <br>
-            <button type="submit" class="btn btn-secondary btn-block col-sm-2 mt-4 mb-4 mx-auto">Connection</button>
-        <br><br>
+        <div class="col-12">
+            <button class="btn btn-secondary text-white" type="submit" name="connection" id="connection" value="connection">Connection</button>
+        </div>
+        <br> 
+        <br>
     </form>
 </div>
 <?php include("footer.php"); ?>

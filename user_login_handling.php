@@ -7,7 +7,7 @@ if(
     && $_POST['nick_name'] !== ''
     && $_POST['password'] !== ''
 ){
-    $maRequete = $db->prepare('SELECT * FROM user WHERE nick_name= :boitePseudo ');
+    $maRequete = $db->prepare('SELECT * FROM user WHERE nick_name= :boitePseudo');
     $maRequete->execute([
         "boitePseudo" => $_POST['nick_name']
     ]);

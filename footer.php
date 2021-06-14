@@ -1,24 +1,8 @@
 <footer class="footer w-100 container-fluid">
-        <div class="row justify-content-between col-11 mx-auto">
-        <div>
+        <div class="row justify-content-between col-12 mx-auto">
             © Copyright - <?php echo date('Y'); ?>
-        </div> 
-	
-        <div class="col-md-6 mh80 text_socialnetworks">
-            <span class="socialnetworks"><a href="https://github.com/laurencerichard9" target="_blank"><i class="fab fa-github-square"></i></a>
-    		</span>	
-            <span class="socialnetworks"><a href="https://www.linkedin.com/in/laurence-richard-09/" target="_blank"><i class="fab fa-linkedin"></i></a> 
-    		</span>
-    		<span class="socialnetworks"><a href="https://twitter.com/lsrichard1" target="_blank"><i class="fab fa-twitter-square"></i></a>
-    		</span>
-            <a href="images/cv_developpeur_integrateur_web_et_infographiste_lr.pdf" target="_blank">CV</a>
-            <p class="link-mail">
-				<i class="fa fas fa-envelope-square icon-margin-right"></i>&nbsp;lsrichard09@gmail.com
-            </p>
-        </div> 
-            <div>
-            <button type="bouton-rosepoudre" class="btn text-white bouton-rosepoudre p-1 ml-3"><a href="admin/index.php">Administration</a></button>
-            </div>
+       
+            <a href="admin/header_admin.php" class="btn text-white bouton-orange p-1 ml-3">Administration du blog</a>
         </div>
 
 

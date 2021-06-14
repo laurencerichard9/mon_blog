@@ -4,15 +4,15 @@
 require_once("admin-check.php");
 require_once('../database.php');
 if(
-    isset($_POST['name'])
-    && $_POST['name'] !== ''
-    && strlen ($_POST['name']) <= 50
+    isset($_POST['nick_name'])
+    && $_POST['nick_name'] !== ''
+    && strlen ($_POST['nick_name']) <= 50
 ){
-	$maRequete = $db->prepare('INSERT INTO post (name)
-	VALUE(:leNom)' );
+	$maRequete = $db->prepare('INSERT INTO post (nick_name)
+	VALUE(:lePseudo)' );
 
 	$maRequete->execute([
-	    "leNom" =>$_POST['name']
+	    "lePseudo" =>$_POST['nick_name']
 	]);
 }
 

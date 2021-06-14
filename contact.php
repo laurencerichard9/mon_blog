@@ -18,7 +18,7 @@ if(!empty($_POST)){
         $entete .= 'From:contact-MyBlog.fr' . "\r\n";
 
         if(mail($destinataire, $sujet, $message, $entete)){
-            echo 'L\'email a bien été envoyé.<a href="" class="">Retour en page d\'accueil</a>';
+            echo 'L\'email a bien été envoyé. <a href="index.php" class="retour-accueil">Retour en page d\'accueil</a>';
         }else{
             echo '<h2>L\'email n\'a pas été envoyer pour des raison inconnu.</h2><br>Merci de recommancez votre commande.';
         }
@@ -35,26 +35,27 @@ if(!empty($_POST)){
         <h1 class="h3 mb-3 py-4 font-weight-normal">Contactez-moi</h1>
         <div class="form-group">
             <label for="nom">Nom :</label>
-            <input type="text" class="form-control" id="nom" name="nom">
+            <input type="text" id="nom" name="nom" placeholder="Entrez votre nom" class="form-control" required autofocus>
         </div>
         <br>
         <div class="form-group">
             <label for="prenom">Prénom :</label>
-            <input type="text" class="form-control" id="prenom" name="prenom">
+            <input type="text" id="prenom" name="prenom" placeholder="Entrez votre prénom" class="form-control" required autofocus>
         </div>
         <br>
         <div class="form-group">
             <label for="sujet">sujet :</label>
-            <input type="text" class="form-control" id="sujet" name="sujet">
+            <input type="text" id="sujet" name="sujet" placeholder="Entrez votre sujet" class="form-control" required autofocus>
         </div>
         <br>
         <div class="form-group">
             <label for="message">message :</label>
-            <textarea name="message" id="message" class="form-control"></textarea>
+            <textarea name="message" id="message" placeholder="Entrez votre message" class="form-control" required autofocus></textarea>
         </div>
         <br><br>
-        <input type="submit" name="valider" id="valider" value="valider" class="form-control btn btn-secondary text-white">
+        <button class="btn btn-secondary text-white" type="submit" name="valider" id="valider" value="valider">Valider</button>
         </form>
+        <br>
     </div>
 </div>
 

@@ -16,7 +16,7 @@ $taches = $maRequete->fetchAll();
             <div class="card-body">
                 <h5 class="card-title">Rubrique News</h5>
                 <p class="card-text">Partie necessaire pour gérer les news.</p>
-                <a href="admin_post.php" class="btn btn-primary">Gérer les news</a>
+                <a href="admin_categories.php" class="btn btn-primary">Gérer les news</a>
             </div>
             </div>
         </div>

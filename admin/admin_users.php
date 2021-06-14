@@ -22,7 +22,7 @@ $user = $maRequete->fetchAll();
             <tbody>
             <?php foreach($user as $author): ?>
                 <tr>
-                    <td class="text-center"><?php echo $author['name']; ?></td>
+                    <td class="text-center"><?php echo $author['nick_name']; ?></td>
                     <td class="text-center"><?php echo $author['role']; ?></td>
                     <td class="text-center">
                         <a href="admin_users_edit.php?idPost=<?php echo $author["id"];?>" class="btn btn-warning ">modifier</a>
