@@ -49,7 +49,7 @@ $(document).ready(function () {
     $('input').focus(function () {
 
         $(this).css({
-            backgroundColor: '#d99e9e',
+            backgroundColor: '#ff9d67',
             color: 'white'
 
         });
@@ -60,7 +60,7 @@ $(document).ready(function () {
     $('textarea').focus(function () {
 
         $(this).css({
-            backgroundColor: '#d99e9e',
+            backgroundColor: '#ff9d67',
             color: 'white'
 
         });
