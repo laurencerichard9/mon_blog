@@ -22,7 +22,7 @@ $news = $maRequete->fetchAll();
             <tbody>
             <?php foreach($news as $post): ?>
                 <tr>
-                    <td class="text-center"><?php echo $post['nick_name']; ?></td>
+                    <td class="text-center"><?php echo $post['nickname']; ?></td>
                     <td class="text-center">
                         <a href="admin_category_edit.php?idPost=<?php echo $post["id"];?>" class="btn btn-warning ">modifier</a>
                         <a href="admin_category_delete.php?idPost=<?php echo $post["id"];?>" class="btn btn-danger ">supprimer</a>

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:8889
--- Generation Time: Jun 15, 2021 at 10:39 AM
+-- Generation Time: Jun 26, 2021 at 08:31 AM
 -- Server version: 5.7.23
 -- PHP Version: 7.2.10
 
@@ -29,7 +29,7 @@ SET time_zone = "+00:00";
 CREATE TABLE `comment` (
   `id` int(11) NOT NULL,
   `content` text NOT NULL,
-  `email_address` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
   `creation_date` datetime NOT NULL,
   `last_update_date` datetime NOT NULL,
   `publication_date` datetime NOT NULL,
@@ -42,7 +42,7 @@ CREATE TABLE `comment` (
 -- Dumping data for table `comment`
 --
 
-INSERT INTO `comment` (`id`, `content`, `email_address`, `creation_date`, `last_update_date`, `publication_date`, `post_id`, `user_id`, `enum_status_comment`) VALUES
+INSERT INTO `comment` (`id`, `content`, `email`, `creation_date`, `last_update_date`, `publication_date`, `post_id`, `user_id`, `enum_status_comment`) VALUES
 (1, 'L\'intelligence Artificielle tout un programme !', 'ls.richard@wanadoo.fr', '2021-05-21 18:20:00', '2021-05-21 18:21:00', '2021-05-21 18:22:00', 1, 1, 2),
 (2, 'Faut-il avoir des connaissances en programmation pour devenir développeur web ?', 'marg78&hotmail.fr', '2021-05-21 18:23:00', '2021-05-21 18:24:00', '2021-05-21 18:25:00', 2, 2, 1);
 
@@ -140,10 +140,10 @@ INSERT INTO `post` (`id`, `title`, `headline`, `content`, `creation_date`, `last
 
 CREATE TABLE `user` (
   `id` int(11) NOT NULL,
-  `first_name` varchar(255) NOT NULL,
-  `last_name` varchar(255) NOT NULL,
-  `nick_name` varchar(255) NOT NULL,
-  `email_address` varchar(255) NOT NULL,
+  `firstname` varchar(255) NOT NULL,
+  `lastname` varchar(255) NOT NULL,
+  `nickname` varchar(255) NOT NULL,
+  `email` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
   `creation_date` datetime NOT NULL,
   `last_update_date` datetime NOT NULL,
@@ -155,7 +155,7 @@ CREATE TABLE `user` (
 -- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `first_name`, `last_name`, `nick_name`, `email_address`, `password`, `creation_date`, `last_update_date`, `publication_date`, `enum_role`) VALUES
+INSERT INTO `user` (`id`, `firstname`, `lastname`, `nickname`, `email`, `password`, `creation_date`, `last_update_date`, `publication_date`, `enum_role`) VALUES
 (1, 'Laurence', 'Richard', 'Lolo', 'ls.richard@wanadoo.fr', 'dev', '2021-05-21 18:12:00', '2021-05-21 18:13:00', '2021-05-21 18:14:00', 1),
 (2, 'Margaux', 'Labrado', 'Gomar', 'marg78@hotmail.fr', 'toto', '2021-05-21 18:15:00', '2021-05-21 18:16:00', '2021-05-21 18:17:00', 2);
 

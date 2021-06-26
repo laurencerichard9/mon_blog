@@ -13,9 +13,9 @@ $user = $maRequete->fetch();
 
     <div class="container">    
         <div class="card-body">
-            <h5 class="card-title text-center"><?php echo $user['nick_name']; ?></h5>
+            <h5 class="card-title text-center"><?php echo $user['nickname']; ?></h5>
             <p class="card-text">
-                <div>Mail: <?php echo $user['email_address'] ?></div>
+                <div>Mail: <?php echo $user['email'] ?></div>
             </p>
         </div>
     </div>
@@ -35,7 +35,7 @@ $user = $maRequete->fetch();
                         echo "checked" ;
                     } ?>
             >
-            <label >admin</label>
+            <label>admin</label>
         </div>
         <button type="submit" class="btn btn-primary">Modifier</button>
         </form>

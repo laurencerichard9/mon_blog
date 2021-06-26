@@ -1,7 +1,7 @@
 <?php
 if(
-    !isset($_SESSION['user'])
-    || $_SESSION['user']['role'] !== 'admin'
+    !isset($_SESSION['utilisateur'])
+    || $_SESSION['utilisateur']['role'] !== 'visitor'
 ){
     header('Location: ../index.php');
     exit();

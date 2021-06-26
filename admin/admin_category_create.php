@@ -10,7 +10,7 @@ require_once('../database.php');
 			<form action="admin_category_create_handling.php" method="POST">
 			<div class="form-group">
 				<label >Nom de la news</label>
-				<input type="text" class="form-control" name="nick_name">
+				<input type="text" class="form-control" name="nickname">
 			</div>
 			
 			<button type="submit" class="btn btn-primary">Ajouter</button>

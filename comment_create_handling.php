@@ -5,8 +5,8 @@ session_start();
 
 
 // on vérifie si l'utilisateur est connecté
-if(!isset($_SESSION['user'])){
-    header('Location:user_login.php');
+if(!isset($_SESSION['utilisateur'])){
+    header('Location: user_login.php');
     exit();
 }
 
@@ -14,7 +14,7 @@ if(!isset($_SESSION['user'])){
 require_once('database.php');
 
 // $_POST['content'] : le commentaire écrit par l'utilisateur
-// $_SESSION['user']['id'] : l'id de l'utilisateur connecté
+// $_SESSION['utilisateur']['id'] : l'id de l'utilisateur connecté
 // $_GET['idDePost'] : l'id de l'article pour lequel le commentaire est posté
 
 
@@ -33,7 +33,7 @@ if(
     $maRequete->execute([
         'boiteContenu' => $_POST['content'],
         'boitePostId' => $_GET['idDePost'],
-        'boiteUserId' => $_SESSION['user']['id']
+        'boiteUserId' => $_SESSION['utilisateur']['id']
     ]);
 
 
@@ -42,5 +42,5 @@ if(
 }
 die();
 // Rediriger l'utilisateur vers la page article_single.php
-header('Location:article_single.php?idDePost=' . $_GET['idDePost']);
+header('Location: article_single.php?idDePost=' . $_GET['idDePost']);
 exit(); //pour que la redirection se fasse immédiatement

@@ -17,7 +17,7 @@ $post = $maRequete->fetch();
 		<form action="admin_category_edit_handling.php?id=<?php echo $post['id']; ?>" method="POST">
 		<div class="form-group">
 			<label >Nom de la news</label>
-			<input type="text" class="form-control" name="nick_name" value="<?php echo $post['nick_name']; ?>">
+			<input type="text" class="form-control" name="nickname" value="<?php echo $post['nickname']; ?>">
 		</div>
 		<button type="submit" class="btn btn-primary">Modifier</button>
 		</form>

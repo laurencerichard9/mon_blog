@@ -8,27 +8,27 @@
         <h1 class="h3 mb-3 font-weight-normal">Inscription</h1>        
 
         <div class="form-group">
-            <label for="first_name" class="col-sm-3 control-label">Prénom*</label>
+            <label for="firstname" class="col-sm-3 control-label">Prénom*</label>
             <div class="col-sm-6 mx-auto">
-                <input type="text" id="first_name" name="first_name" placeholder="Saisir votre prénom" class="form-control " maxlength="255" required autofocus >
+                <input type="text" id="firstname" name="name" placeholder="Saisir votre prénom" class="form-control " maxlength="255" required autofocus >
             </div>
         </div>
         <div class="form-group">
-            <label for="last_name" class="col-sm-3 control-label">Nom*</label>
+            <label for="lastname" class="col-sm-3 control-label">Nom*</label>
             <div class="col-sm-6 mx-auto">
-                <input type="text" id="last_name" name="last_name" placeholder="Saisir votre nom" class="form-control " maxlength="255" required autofocus >
+                <input type="text" id="lastname" name="name" placeholder="Saisir votre nom" class="form-control " maxlength="255" required autofocus >
             </div>
         </div>
         <div class="form-group">
-            <label for="nick_name" class="col-sm-3 control-label">Pseudo*</label>
+            <label for="nickname" class="col-sm-3 control-label">Pseudo*</label>
             <div class="col-sm-6 mx-auto">
-                <input type="text" id="nick_name" name="nick_name" placeholder="Saisir votre pseudo" class="form-control " maxlength="255" required autofocus >
+                <input type="text" id="nickname" name="name" placeholder="Saisir votre pseudo" class="form-control " maxlength="255" required autofocus >
             </div>
         </div>
         <div class="form-group">
-            <label for="email_address" class="col-sm-3 control-label">Email*</label>
+            <label for="email" class="col-sm-3 control-label">Email*</label>
             <div class="col-sm-6 mx-auto">
-                <input type="email" id="email_address" name="email_address" placeholder="Saisir votre adresse mail" class="form-control" maxlength="255" required autofocus >
+                <input type="email" id="email" name="email" placeholder="Saisir votre mail" class="form-control" maxlength="255" required autofocus >
             </div>
         </div>
         <div class="form-group">
@@ -45,7 +45,7 @@
         </div>
         <br>
         <div class="col-12">
-                <button class="btn btn-secondary text-white" type="submit" name="inscription" id="inscription" value="inscription">S'inscrire</button>
+                <button class="btn btn-secondary text-white" type="submit">S'inscrire</button>
         </div>
         <br>
     </form>

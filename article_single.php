@@ -2,19 +2,20 @@
 include('header.php');
 require_once('database.php'); 
 
+
+
 // requête de récupération de la news
 $maRequete = $db->prepare(
-    'SELECT id, title, headline, content, DATE_FORMAT(last_update_date, \'%d/%m/%Y à %Hh%i\') AS last_update_date_fr
-    FROM post
-    WHERE id = :boiteId
-    ');
+   'SELECT id, title, headline, content, DATE_FORMAT(last_update_date, \'%d/%m/%Y à %Hh%i\') AS last_update_date_fr
+   FROM post
+   WHERE id = :boiteId
+   ');
 $maRequete->execute([
     "boiteId" => $_GET["idDePost"]
 ]);
 $rendu = $maRequete->fetch();
 
 ?>
-
 
 
 
@@ -39,12 +40,12 @@ $rendu = $maRequete->fetch();
             <form action="comment_create_handling.php?idDePost=<?php echo $rendu['id']; ?>" method="POST">
                 <div class="form-row">
                     <div class="col">
-                        <label for="nick_name">Pseudo :</label>
-                        <input type="text" name="nick_name" id="nick_name" class="form-control">
+                        <label for="nickname">Pseudo :</label>
+                        <input type="text" id="nickname" name="name" class="form-control">
                     </div>
                     <div class="col">
-                        <label for="email_address">Email :</label>
-                        <input type="text" name="email_address" id="email_address" class="form-control">
+                        <label for="email">Email :</label>
+                        <input type="text" id="email" name="email" class="form-control">
                     </div>
                 </div>
                 <br>
@@ -54,7 +55,7 @@ $rendu = $maRequete->fetch();
                 </div>
                 <br><br>
                 <div class="col-12">
-                    <button class="btn btn-secondary text-white" type="submit" name="soumettre" id="soumettre" value="soumettre">Soumettre</button>
+                    <button class="btn btn-secondary text-white" type="submit">Soumettre</button>
                 </div>  
             </form>
             </div>
@@ -64,7 +65,7 @@ $rendu = $maRequete->fetch();
 <?php
 // requête de récupération des commentaires de la news
 $requeteComments = $db->prepare(
-    'SELECT comment.content, comment.publication_date, user.nick_name
+    'SELECT comment.content, comment.publication_date, user.nickname
     FROM comment JOIN user
     ON comment.user_id = user_id;
     WHERE post_id = :boitePostId
@@ -83,7 +84,7 @@ $comments = $requeteComments->fetchAll();
 <!--// Afficher les commentaires avec un foreach-->
 <?php foreach($comments as $comment): ?>
     <div class="offre">
-        L'utilisateur ayant le pseudo <?php echo $comment['nick_name']; ?> a dit :
+        L'utilisateur ayant le pseudo <?php echo $comment['nickname']; ?> a dit :
     <?php echo htmlspecialchars($comment['content']); ?>
 <!-- on écrit htmlspecialchars lorsque l'on ne veut pas que l'utilisateur écrive n'importe quoi de sensible dans les commentaires par exemple...
 A chaque endroit où l'utilisateur (internaute) devra écrire quelque chose (commentaire, avis...)-->

@@ -20,7 +20,7 @@ if(!empty($_POST)){
         if(mail($destinataire, $sujet, $message, $entete)){
             echo 'L\'email a bien été envoyé. <a href="index.php" class="retour-accueil">Retour en page d\'accueil</a>';
         }else{
-            echo '<h2>L\'email n\'a pas été envoyer pour des raison inconnu.</h2><br>Merci de recommancez votre commande.';
+            echo '<h2>L\'email n\'a pas été envoyé pour des raisons inconnues.</h2><br>Merci de renouveller votre demande.';
         }
     }
 }

@@ -40,15 +40,15 @@
           <a class="nav-link" href="contact.php">Contactez-moi</a>
         </li>
         
-        <?php if(isset($_SESSION['user'])): ?>
-                <?php if($_SESSION['user']['role'] === 'admin'): ?>
+        <?php if(isset($_SESSION['utilisateur'])): ?>
+                <?php if($_SESSION['utilisateur']['role'] === 'admin'): ?>
                     <li  class="nav-item">
-                        <a class="nav-link bouton-orange" href="/admin/index.php">Administration</a>
+                        <a class="nav-link bouton-orange" href="admin/index.php">Administration</a>
                     </li>
                 <?php endif; ?>
-                <?php if($_SESSION['user']['role'] === 'visitor'): ?>
+                <?php if($_SESSION['utilisateur']['role'] === 'visitor'): ?>
                     <li  class="nav-item">
-                        <a class="nav-link bouton-orange" href="article_all.php" >Espace visitor</a>
+                        <a class="nav-link bouton-orange" href="article_all.php" >Espace visiteur</a>
                     </li>
                 <?php endif; ?>
                     <li  class="nav-item">
@@ -62,9 +62,9 @@
                         <a class="nav-link bouton-orange" href="user_register.php">Inscription</a>
                     </li>
         <?php endif; ?>
-        <?php if(isset($_SESSION['user'])): ?>
+        <?php if(isset($_SESSION['utilisateur'])): ?>
                     <li  class="nav-item">
-                        <p class="nav-link"> <?php echo $_SESSION['user']['nick_name']; ?></p>
+                        <p class="nav-link"> <?php echo $_SESSION['utilisateur']['nickname']; ?></p>
                     </li>
         <?php endif; ?>
         </ul>

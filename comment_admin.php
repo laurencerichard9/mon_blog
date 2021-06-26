@@ -13,7 +13,7 @@ require_once('database.php');
 
 // requête de récupération des commentaires de l'article
 $requeteComments = $db->prepare(
-    'SELECT comment.content, user.nick_name, post.title, comment.publication_date  
+    'SELECT comment.content, user.nickname, post.title, comment.publication_date  
     FROM comment
     JOIN user 
     ON comment.user_id = user.id
@@ -31,7 +31,7 @@ $comments = $requeteComments->fetchAll();
 	<table>
 		<tr>
             <th>content</th>
-            <th>nick_name</th>
+            <th>nickname</th>
             <th>title</th>
             <th>publication_date</th>
 		</tr>
@@ -43,7 +43,7 @@ $comments = $requeteComments->fetchAll();
 ?>
 		<tr>
 			<td><?php echo $comment['content']; ?></td>
-            <td><?php echo $comment['nick_name']; ?></td>
+            <td><?php echo $comment['nickname']; ?></td>
             <td><?php echo $comment['title']; ?></td>
             <td><?php echo $comment['publication_date']; ?></td>
         </tr>

@@ -3,9 +3,9 @@
 require_once('admin_check.php');
 require_once('database.php');
 
-$maRequete = $db->prepare('SELECT * FROM post');
-$maRequete->execute();
-$post = $maRequete->fetchAll();
+//$maRequete = $db->prepare('SELECT * FROM post');
+//$maRequete->execute();
+//$post = $maRequete->fetchAll();
 
 
 ?>

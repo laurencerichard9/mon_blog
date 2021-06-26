@@ -18,7 +18,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <a class="nav-item nav-link " href="../index.php">Accueil site <!--span class="sr-only">(current)</span--></a>
+                <a class="nav-item nav-link " href="../index.php">Accueil site</a>
                 <a class="nav-item nav-link" href="index.php">Tableau de bord</a>
                 <a class="nav-item nav-link" href="admin_categories.php">News</a>  
                 <a class="nav-item nav-link" href="admin_users.php">Users</a> 
